@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MassSprings3D.v14", "MassSprings3D.v14.vcxproj", "{1EBA03B2-B0D3-4B8E-B9D6-791FA45C3B4D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Required", "Required", "{B488EF7E-DAFE-42E1-9649-A21CC236B180}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GTEngine.v14", "..\..\..\GTEngine.v14.vcxproj", "{43A54DE9-1F9B-4BC6-A7BC-C3FD13B2C829}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1EBA03B2-B0D3-4B8E-B9D6-791FA45C3B4D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1EBA03B2-B0D3-4B8E-B9D6-791FA45C3B4D}.Debug|Win32.Build.0 = Debug|Win32
+		{1EBA03B2-B0D3-4B8E-B9D6-791FA45C3B4D}.Debug|x64.ActiveCfg = Debug|x64
+		{1EBA03B2-B0D3-4B8E-B9D6-791FA45C3B4D}.Debug|x64.Build.0 = Debug|x64
+		{1EBA03B2-B0D3-4B8E-B9D6-791FA45C3B4D}.Release|Win32.ActiveCfg = Release|Win32
+		{1EBA03B2-B0D3-4B8E-B9D6-791FA45C3B4D}.Release|Win32.Build.0 = Release|Win32
+		{1EBA03B2-B0D3-4B8E-B9D6-791FA45C3B4D}.Release|x64.ActiveCfg = Release|x64
+		{1EBA03B2-B0D3-4B8E-B9D6-791FA45C3B4D}.Release|x64.Build.0 = Release|x64
+		{43A54DE9-1F9B-4BC6-A7BC-C3FD13B2C829}.Debug|Win32.ActiveCfg = Debug|Win32
+		{43A54DE9-1F9B-4BC6-A7BC-C3FD13B2C829}.Debug|Win32.Build.0 = Debug|Win32
+		{43A54DE9-1F9B-4BC6-A7BC-C3FD13B2C829}.Debug|x64.ActiveCfg = Debug|x64
+		{43A54DE9-1F9B-4BC6-A7BC-C3FD13B2C829}.Debug|x64.Build.0 = Debug|x64
+		{43A54DE9-1F9B-4BC6-A7BC-C3FD13B2C829}.Release|Win32.ActiveCfg = Release|Win32
+		{43A54DE9-1F9B-4BC6-A7BC-C3FD13B2C829}.Release|Win32.Build.0 = Release|Win32
+		{43A54DE9-1F9B-4BC6-A7BC-C3FD13B2C829}.Release|x64.ActiveCfg = Release|x64
+		{43A54DE9-1F9B-4BC6-A7BC-C3FD13B2C829}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{43A54DE9-1F9B-4BC6-A7BC-C3FD13B2C829} = {B488EF7E-DAFE-42E1-9649-A21CC236B180}
+	EndGlobalSection
+EndGlobal
+

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   id="svg2"
+   viewBox="0 0 710.7671 236.36074"
+   height="66.706253mm"
+   width="200.59427mm">
+  <defs
+     id="defs4">
+    <filter
+       id="filter3375"
+       style="color-interpolation-filters:sRGB"
+       x="-0.2"
+       width="1.4"
+       y="-0.2"
+       height="1.4">
+      <feGaussianBlur
+         id="feGaussianBlur3377"
+         result="result10"
+         stdDeviation="3" />
+      <feBlend
+         id="feBlend3379"
+         result="fbSourceGraphic"
+         in="result10"
+         mode="normal"
+         in2="result10" />
+      <feGaussianBlur
+         id="feGaussianBlur3381"
+         in="fbSourceGraphic"
+         result="result8"
+         stdDeviation="3" />
+      <feTurbulence
+         id="feTurbulence3383"
+         baseFrequency="0.2"
+         numOctaves="1"
+         type="fractalNoise"
+         result="result7"
+         seed="0" />
+      <feComposite
+         id="feComposite3385"
+         in="result8"
+         operator="in"
+         result="result6"
+         in2="result8" />
+      <feDisplacementMap
+         id="feDisplacementMap3387"
+         result="result4"
+         scale="50"
+         yChannelSelector="G"
+         xChannelSelector="R"
+         in="result7"
+         in2="result6" />
+      <feComposite
+         k4="0"
+         k2="0"
+         id="feComposite3389"
+         k3="1"
+         k1="1"
+         in="result8"
+         operator="arithmetic"
+         result="result2"
+         in2="result4" />
+      <feComposite
+         id="feComposite3391"
+         operator="in"
+         in="fbSourceGraphic"
+         result="fbSourceGraphic"
+         in2="result2" />
+      <feDisplacementMap
+         id="feDisplacementMap3393"
+         xChannelSelector="R"
+         scale="50"
+         yChannelSelector="G"
+         in2="result4" />
+    </filter>
+    <filter
+       id="filter3395"
+       style="color-interpolation-filters:sRGB">
+      <feComposite
+         k3="0"
+         k2="0"
+         k1="0"
+         id="feComposite3397"
+         operator="arithmetic"
+         k4="1"
+         result="result1"
+         in2="SourceGraphic" />
+      <feGaussianBlur
+         id="feGaussianBlur3399"
+         stdDeviation="17"
+         result="blur"
+         in="SourceAlpha" />
+      <feComposite
+         id="feComposite3401"
+         operator="in"
+         result="composite3"
+         in="blur"
+         in2="blur" />
+      <feBlend
+         id="feBlend3403"
+         mode="multiply"
+         result="fbSourceGraphic"
+         in2="result1" />
+      <feComponentTransfer
+         id="feComponentTransfer3405"
+         in="fbSourceGraphic"
+         result="component1">
+        <feFuncR
+           id="feFuncR3407"
+           type="discrete"
+           tableValues="0 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1 1" />
+        <feFuncG
+           id="feFuncG3409"
+           type="discrete"
+           tableValues="0 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1 1" />
+        <feFuncB
+           id="feFuncB3411"
+           type="discrete"
+           tableValues="0 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1 1" />
+      </feComponentTransfer>
+      <feColorMatrix
+         id="feColorMatrix3413"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 -0.2125 -0.7154 -0.0721 1 0 "
+         result="colormatrix" />
+      <feGaussianBlur
+         id="feGaussianBlur3415"
+         result="result2"
+         in="SourceGraphic"
+         stdDeviation="10" />
+      <feColorMatrix
+         id="feColorMatrix3417"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 50 0 "
+         result="result3" />
+      <feComponentTransfer
+         id="feComponentTransfer3419"
+         result="component1"
+         in="result3">
+        <feFuncR
+           id="feFuncR3421"
+           tableValues="0 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1 1"
+           type="discrete" />
+        <feFuncG
+           id="feFuncG3423"
+           tableValues="0 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1 1"
+           type="discrete" />
+        <feFuncB
+           id="feFuncB3425"
+           tableValues="0 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1 1"
+           type="discrete" />
+      </feComponentTransfer>
+      <feComposite
+         id="feComposite3427"
+         operator="in"
+         in2="colormatrix" />
+    </filter>
+  </defs>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(-15.871186,-15.216625)"
+     id="layer1">
+    <flowRoot
+       transform="translate(-125.71428,-528.57143)"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="flowRoot3344"
+       xml:space="preserve"><flowRegion
+         id="flowRegion3346"><rect
+           style="fill:#ffffff"
+           y="535.21936"
+           x="137.14285"
+           height="180.00003"
+           width="988.57141"
+           id="rect3348" /></flowRegion><flowPara
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:131.25px;line-height:125%;font-family:'Bauhaus 93';-inkscape-font-specification:'Bauhaus 93, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#ffffff"
+         id="flowPara3350">MagicMirror</flowPara></flowRoot>    <text
+       transform="scale(1.0431229,-0.95865984)"
+       id="text3452"
+       y="-173.83316"
+       x="8.5183754"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:43.13969421px;line-height:125%;font-family:'Bauhaus 93';-inkscape-font-specification:'Bauhaus 93, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:125.82410431px;line-height:125%;font-family:'Bauhaus 93';-inkscape-font-specification:'Bauhaus 93, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#ffffff"
+         y="-173.83316"
+         x="8.5183754"
+         id="tspan3454">MagicMirror</tspan></text>
+  </g>
+</svg>

@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Castle.v14", "Castle.v14.vcxproj", "{06A28CF5-098B-41E5-A991-F5D955839471}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Required", "Required", "{D6C51ADA-2E71-4CA4-859E-61652EEEFCC2}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GTEngine.v14", "..\..\..\GTEngine.v14.vcxproj", "{43A54DE9-1F9B-4BC6-A7BC-C3FD13B2C829}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{06A28CF5-098B-41E5-A991-F5D955839471}.Debug|Win32.ActiveCfg = Debug|Win32
+		{06A28CF5-098B-41E5-A991-F5D955839471}.Debug|Win32.Build.0 = Debug|Win32
+		{06A28CF5-098B-41E5-A991-F5D955839471}.Debug|x64.ActiveCfg = Debug|x64
+		{06A28CF5-098B-41E5-A991-F5D955839471}.Debug|x64.Build.0 = Debug|x64
+		{06A28CF5-098B-41E5-A991-F5D955839471}.Release|Win32.ActiveCfg = Release|Win32
+		{06A28CF5-098B-41E5-A991-F5D955839471}.Release|Win32.Build.0 = Release|Win32
+		{06A28CF5-098B-41E5-A991-F5D955839471}.Release|x64.ActiveCfg = Release|x64
+		{06A28CF5-098B-41E5-A991-F5D955839471}.Release|x64.Build.0 = Release|x64
+		{43A54DE9-1F9B-4BC6-A7BC-C3FD13B2C829}.Debug|Win32.ActiveCfg = Debug|Win32
+		{43A54DE9-1F9B-4BC6-A7BC-C3FD13B2C829}.Debug|Win32.Build.0 = Debug|Win32
+		{43A54DE9-1F9B-4BC6-A7BC-C3FD13B2C829}.Debug|x64.ActiveCfg = Debug|x64
+		{43A54DE9-1F9B-4BC6-A7BC-C3FD13B2C829}.Debug|x64.Build.0 = Debug|x64
+		{43A54DE9-1F9B-4BC6-A7BC-C3FD13B2C829}.Release|Win32.ActiveCfg = Release|Win32
+		{43A54DE9-1F9B-4BC6-A7BC-C3FD13B2C829}.Release|Win32.Build.0 = Release|Win32
+		{43A54DE9-1F9B-4BC6-A7BC-C3FD13B2C829}.Release|x64.ActiveCfg = Release|x64
+		{43A54DE9-1F9B-4BC6-A7BC-C3FD13B2C829}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{43A54DE9-1F9B-4BC6-A7BC-C3FD13B2C829} = {D6C51ADA-2E71-4CA4-859E-61652EEEFCC2}
+	EndGlobalSection
+EndGlobal

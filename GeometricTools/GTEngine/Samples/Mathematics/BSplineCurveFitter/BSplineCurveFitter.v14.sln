@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BSplineCurveFitter.v14", "BSplineCurveFitter.v14.vcxproj", "{EA7985AC-9D27-4716-90F1-543D5760406C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Required", "Required", "{D55F4245-B084-4C8C-A109-11E3B431045B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GTEngine.v14", "..\..\..\GTEngine.v14.vcxproj", "{43A54DE9-1F9B-4BC6-A7BC-C3FD13B2C829}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EA7985AC-9D27-4716-90F1-543D5760406C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{EA7985AC-9D27-4716-90F1-543D5760406C}.Debug|Win32.Build.0 = Debug|Win32
+		{EA7985AC-9D27-4716-90F1-543D5760406C}.Debug|x64.ActiveCfg = Debug|x64
+		{EA7985AC-9D27-4716-90F1-543D5760406C}.Debug|x64.Build.0 = Debug|x64
+		{EA7985AC-9D27-4716-90F1-543D5760406C}.Release|Win32.ActiveCfg = Release|Win32
+		{EA7985AC-9D27-4716-90F1-543D5760406C}.Release|Win32.Build.0 = Release|Win32
+		{EA7985AC-9D27-4716-90F1-543D5760406C}.Release|x64.ActiveCfg = Release|x64
+		{EA7985AC-9D27-4716-90F1-543D5760406C}.Release|x64.Build.0 = Release|x64
+		{43A54DE9-1F9B-4BC6-A7BC-C3FD13B2C829}.Debug|Win32.ActiveCfg = Debug|Win32
+		{43A54DE9-1F9B-4BC6-A7BC-C3FD13B2C829}.Debug|Win32.Build.0 = Debug|Win32
+		{43A54DE9-1F9B-4BC6-A7BC-C3FD13B2C829}.Debug|x64.ActiveCfg = Debug|x64
+		{43A54DE9-1F9B-4BC6-A7BC-C3FD13B2C829}.Debug|x64.Build.0 = Debug|x64
+		{43A54DE9-1F9B-4BC6-A7BC-C3FD13B2C829}.Release|Win32.ActiveCfg = Release|Win32
+		{43A54DE9-1F9B-4BC6-A7BC-C3FD13B2C829}.Release|Win32.Build.0 = Release|Win32
+		{43A54DE9-1F9B-4BC6-A7BC-C3FD13B2C829}.Release|x64.ActiveCfg = Release|x64
+		{43A54DE9-1F9B-4BC6-A7BC-C3FD13B2C829}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{43A54DE9-1F9B-4BC6-A7BC-C3FD13B2C829} = {D55F4245-B084-4C8C-A109-11E3B431045B}
+	EndGlobalSection
+EndGlobal
+

@@ -1,0 +1,324 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Data Files">
+      <UniqueIdentifier>{8567ae4a-44ff-479a-8276-1ac414134159}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data Files\Geometry">
+      <UniqueIdentifier>{643a9d4a-8a52-4077-9afa-21b633692673}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data Files\Textures">
+      <UniqueIdentifier>{501fb62c-b5ff-49d4-872f-37667c991eef}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Castle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CastleWindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CreateMeshes.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LoadData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CastleWindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Geometry\Barrel01.txt">
+      <Filter>Data Files\Geometry</Filter>
+    </Text>
+    <Text Include="Geometry\BarrelRack01.txt">
+      <Filter>Data Files\Geometry</Filter>
+    </Text>
+    <Text Include="Geometry\BarrelRack03.txt">
+      <Filter>Data Files\Geometry</Filter>
+    </Text>
+    <Text Include="Geometry\Bench01.txt">
+      <Filter>Data Files\Geometry</Filter>
+    </Text>
+    <Text Include="Geometry\Box01.txt">
+      <Filter>Data Files\Geometry</Filter>
+    </Text>
+    <Text Include="Geometry\Box02.txt">
+      <Filter>Data Files\Geometry</Filter>
+    </Text>
+    <Text Include="Geometry\Bridge.txt">
+      <Filter>Data Files\Geometry</Filter>
+    </Text>
+    <Text Include="Geometry\Bunk01.txt">
+      <Filter>Data Files\Geometry</Filter>
+    </Text>
+    <Text Include="Geometry\CeilingLight01.txt">
+      <Filter>Data Files\Geometry</Filter>
+    </Text>
+    <Text Include="Geometry\ChestBottom01.txt">
+      <Filter>Data Files\Geometry</Filter>
+    </Text>
+    <Text Include="Geometry\ChestTop01.txt">
+      <Filter>Data Files\Geometry</Filter>
+    </Text>
+    <Text Include="Geometry\Cylinder02.txt">
+      <Filter>Data Files\Geometry</Filter>
+    </Text>
+    <Text Include="Geometry\Cylinder02NCL.txt">
+      <Filter>Data Files\Geometry</Filter>
+    </Text>
+    <Text Include="Geometry\Cylinder03.txt">
+      <Filter>Data Files\Geometry</Filter>
+    </Text>
+    <Text Include="Geometry\Cylinder06.txt">
+      <Filter>Data Files\Geometry</Filter>
+    </Text>
+    <Text Include="Geometry\Door.txt">
+      <Filter>Data Files\Geometry</Filter>
+    </Text>
+    <Text Include="Geometry\DoorFrame01.txt">
+      <Filter>Data Files\Geometry</Filter>
+    </Text>
+    <Text Include="Geometry\DoorFrame53.txt">
+      <Filter>Data Files\Geometry</Filter>
+    </Text>
+    <Text Include="Geometry\DoorFrame61.txt">
+      <Filter>Data Files\Geometry</Filter>
+    </Text>
+    <Text Include="Geometry\DoorFrame62.txt">
+      <Filter>Data Files\Geometry</Filter>
+    </Text>
+    <Text Include="Geometry\DrawBridge.txt">
+      <Filter>Data Files\Geometry</Filter>
+    </Text>
+    <Text Include="Geometry\Exterior.txt">
+      <Filter>Data Files\Geometry</Filter>
+    </Text>
+    <Text Include="Geometry\FrontHall.txt">
+      <Filter>Data Files\Geometry</Filter>
+    </Text>
+    <Text Include="Geometry\FrontRamp.txt">
+      <Filter>Data Files\Geometry</Filter>
+    </Text>
+    <Text Include="Geometry\LargePort.txt">
+      <Filter>Data Files\Geometry</Filter>
+    </Text>
+    <Text Include="Geometry\MainGate.txt">
+      <Filter>Data Files\Geometry</Filter>
+    </Text>
+    <Text Include="Geometry\MainGate01.txt">
+      <Filter>Data Files\Geometry</Filter>
+    </Text>
+    <Text Include="Geometry\Mug.txt">
+      <Filter>Data Files\Geometry</Filter>
+    </Text>
+    <Text Include="Geometry\QuadPatch01.txt">
+      <Filter>Data Files\Geometry</Filter>
+    </Text>
+    <Text Include="Geometry\Rope.txt">
+      <Filter>Data Files\Geometry</Filter>
+    </Text>
+    <Text Include="Geometry\SimpleChair01.txt">
+      <Filter>Data Files\Geometry</Filter>
+    </Text>
+    <Text Include="Geometry\SkyDome.txt">
+      <Filter>Data Files\Geometry</Filter>
+    </Text>
+    <Text Include="Geometry\SmallPort.txt">
+      <Filter>Data Files\Geometry</Filter>
+    </Text>
+    <Text Include="Geometry\Sphere01.txt">
+      <Filter>Data Files\Geometry</Filter>
+    </Text>
+    <Text Include="Geometry\SquareTable01.txt">
+      <Filter>Data Files\Geometry</Filter>
+    </Text>
+    <Text Include="Geometry\Table01.txt">
+      <Filter>Data Files\Geometry</Filter>
+    </Text>
+    <Text Include="Geometry\Terrain.txt">
+      <Filter>Data Files\Geometry</Filter>
+    </Text>
+    <Text Include="Geometry\Tube01.txt">
+      <Filter>Data Files\Geometry</Filter>
+    </Text>
+    <Text Include="Geometry\Wall01.txt">
+      <Filter>Data Files\Geometry</Filter>
+    </Text>
+    <Text Include="Geometry\Wall02.txt">
+      <Filter>Data Files\Geometry</Filter>
+    </Text>
+    <Text Include="Geometry\WallTurret01.txt">
+      <Filter>Data Files\Geometry</Filter>
+    </Text>
+    <Text Include="Geometry\WallTurret02.txt">
+      <Filter>Data Files\Geometry</Filter>
+    </Text>
+    <Text Include="Geometry\Water.txt">
+      <Filter>Data Files\Geometry</Filter>
+    </Text>
+    <Text Include="Geometry\Water2.txt">
+      <Filter>Data Files\Geometry</Filter>
+    </Text>
+    <Text Include="Geometry\WoodShield01.txt">
+      <Filter>Data Files\Geometry</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Textures\barrel.png">
+      <Filter>Data Files\Textures</Filter>
+    </Image>
+    <Image Include="Textures\barrelbase.png">
+      <Filter>Data Files\Textures</Filter>
+    </Image>
+    <Image Include="Textures\blanket.png">
+      <Filter>Data Files\Textures</Filter>
+    </Image>
+    <Image Include="Textures\bunkwood.png">
+      <Filter>Data Files\Textures</Filter>
+    </Image>
+    <Image Include="Textures\chest01.png">
+      <Filter>Data Files\Textures</Filter>
+    </Image>
+    <Image Include="Textures\door.png">
+      <Filter>Data Files\Textures</Filter>
+    </Image>
+    <Image Include="Textures\doorframe.png">
+      <Filter>Data Files\Textures</Filter>
+    </Image>
+    <Image Include="Textures\floor02.png">
+      <Filter>Data Files\Textures</Filter>
+    </Image>
+    <Image Include="Textures\gravel_cap_ne.png">
+      <Filter>Data Files\Textures</Filter>
+    </Image>
+    <Image Include="Textures\gravel_cap_nw.png">
+      <Filter>Data Files\Textures</Filter>
+    </Image>
+    <Image Include="Textures\gravel_corner_ne.png">
+      <Filter>Data Files\Textures</Filter>
+    </Image>
+    <Image Include="Textures\gravel_corner_nw.png">
+      <Filter>Data Files\Textures</Filter>
+    </Image>
+    <Image Include="Textures\gravel_corner_se.png">
+      <Filter>Data Files\Textures</Filter>
+    </Image>
+    <Image Include="Textures\gravel_corner_sw.png">
+      <Filter>Data Files\Textures</Filter>
+    </Image>
+    <Image Include="Textures\gravel_side_n.png">
+      <Filter>Data Files\Textures</Filter>
+    </Image>
+    <Image Include="Textures\gravel_side_s.png">
+      <Filter>Data Files\Textures</Filter>
+    </Image>
+    <Image Include="Textures\gravel_side_w.png">
+      <Filter>Data Files\Textures</Filter>
+    </Image>
+    <Image Include="Textures\gravel01.png">
+      <Filter>Data Files\Textures</Filter>
+    </Image>
+    <Image Include="Textures\gravel02.png">
+      <Filter>Data Files\Textures</Filter>
+    </Image>
+    <Image Include="Textures\hugestone01.png">
+      <Filter>Data Files\Textures</Filter>
+    </Image>
+    <Image Include="Textures\hugestone02.png">
+      <Filter>Data Files\Textures</Filter>
+    </Image>
+    <Image Include="Textures\keystone.png">
+      <Filter>Data Files\Textures</Filter>
+    </Image>
+    <Image Include="Textures\largerstone01.png">
+      <Filter>Data Files\Textures</Filter>
+    </Image>
+    <Image Include="Textures\largerstone02.png">
+      <Filter>Data Files\Textures</Filter>
+    </Image>
+    <Image Include="Textures\largestone01.png">
+      <Filter>Data Files\Textures</Filter>
+    </Image>
+    <Image Include="Textures\largeststone01.png">
+      <Filter>Data Files\Textures</Filter>
+    </Image>
+    <Image Include="Textures\largeststone02.png">
+      <Filter>Data Files\Textures</Filter>
+    </Image>
+    <Image Include="Textures\metal01.png">
+      <Filter>Data Files\Textures</Filter>
+    </Image>
+    <Image Include="Textures\mug.png">
+      <Filter>Data Files\Textures</Filter>
+    </Image>
+    <Image Include="Textures\outwall03.png">
+      <Filter>Data Files\Textures</Filter>
+    </Image>
+    <Image Include="Textures\port.png">
+      <Filter>Data Files\Textures</Filter>
+    </Image>
+    <Image Include="Textures\ramp03.png">
+      <Filter>Data Files\Textures</Filter>
+    </Image>
+    <Image Include="Textures\river01.png">
+      <Filter>Data Files\Textures</Filter>
+    </Image>
+    <Image Include="Textures\river02.png">
+      <Filter>Data Files\Textures</Filter>
+    </Image>
+    <Image Include="Textures\rooftemp.png">
+      <Filter>Data Files\Textures</Filter>
+    </Image>
+    <Image Include="Textures\rope.png">
+      <Filter>Data Files\Textures</Filter>
+    </Image>
+    <Image Include="Textures\shield01.png">
+      <Filter>Data Files\Textures</Filter>
+    </Image>
+    <Image Include="Textures\skyline.png">
+      <Filter>Data Files\Textures</Filter>
+    </Image>
+    <Image Include="Textures\steps.png">
+      <Filter>Data Files\Textures</Filter>
+    </Image>
+    <Image Include="Textures\stone01.png">
+      <Filter>Data Files\Textures</Filter>
+    </Image>
+    <Image Include="Textures\stone02.png">
+      <Filter>Data Files\Textures</Filter>
+    </Image>
+    <Image Include="Textures\stone03.png">
+      <Filter>Data Files\Textures</Filter>
+    </Image>
+    <Image Include="Textures\tileplanks.png">
+      <Filter>Data Files\Textures</Filter>
+    </Image>
+    <Image Include="Textures\torchhead.png">
+      <Filter>Data Files\Textures</Filter>
+    </Image>
+    <Image Include="Textures\torchwood.png">
+      <Filter>Data Files\Textures</Filter>
+    </Image>
+    <Image Include="Textures\wall02.png">
+      <Filter>Data Files\Textures</Filter>
+    </Image>
+    <Image Include="Textures\walllightmap.png">
+      <Filter>Data Files\Textures</Filter>
+    </Image>
+    <Image Include="Textures\woodceiling.png">
+      <Filter>Data Files\Textures</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

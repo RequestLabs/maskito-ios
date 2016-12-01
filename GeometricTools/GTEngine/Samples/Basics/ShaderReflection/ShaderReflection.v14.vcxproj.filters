@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Sample Shader Files">
+      <UniqueIdentifier>{e82a51b2-08f5-413d-9d6d-58a431ae3b15}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ShaderReflection.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="Billboards.hlsl">
+      <Filter>Sample Shader Files</Filter>
+    </FxCompile>
+    <FxCompile Include="NestedStruct.hlsl">
+      <Filter>Sample Shader Files</Filter>
+    </FxCompile>
+    <FxCompile Include="SimpleBuffers.hlsl">
+      <Filter>Sample Shader Files</Filter>
+    </FxCompile>
+    <FxCompile Include="TextureArrays.hlsl">
+      <Filter>Sample Shader Files</Filter>
+    </FxCompile>
+    <FxCompile Include="Texturing.hlsl">
+      <Filter>Sample Shader Files</Filter>
+    </FxCompile>
+    <FxCompile Include="VertexColoring.hlsl">
+      <Filter>Sample Shader Files</Filter>
+    </FxCompile>
+  </ItemGroup>
+</Project>

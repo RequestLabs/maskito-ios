@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30110.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SharedTextures.v12", "SharedTextures.v12.vcxproj", "{3F5F31D6-0CB2-4C2B-8F72-403661186F9D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Required", "Required", "{698F4D29-4EC0-4F19-9D47-5146655FD03A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GTEngine.v12", "..\..\..\GTEngine.v12.vcxproj", "{702CEC70-EE3E-43A0-8D93-48B58FA50D3C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3F5F31D6-0CB2-4C2B-8F72-403661186F9D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3F5F31D6-0CB2-4C2B-8F72-403661186F9D}.Debug|Win32.Build.0 = Debug|Win32
+		{3F5F31D6-0CB2-4C2B-8F72-403661186F9D}.Debug|x64.ActiveCfg = Debug|x64
+		{3F5F31D6-0CB2-4C2B-8F72-403661186F9D}.Debug|x64.Build.0 = Debug|x64
+		{3F5F31D6-0CB2-4C2B-8F72-403661186F9D}.Release|Win32.ActiveCfg = Release|Win32
+		{3F5F31D6-0CB2-4C2B-8F72-403661186F9D}.Release|Win32.Build.0 = Release|Win32
+		{3F5F31D6-0CB2-4C2B-8F72-403661186F9D}.Release|x64.ActiveCfg = Release|x64
+		{3F5F31D6-0CB2-4C2B-8F72-403661186F9D}.Release|x64.Build.0 = Release|x64
+		{702CEC70-EE3E-43A0-8D93-48B58FA50D3C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{702CEC70-EE3E-43A0-8D93-48B58FA50D3C}.Debug|Win32.Build.0 = Debug|Win32
+		{702CEC70-EE3E-43A0-8D93-48B58FA50D3C}.Debug|x64.ActiveCfg = Debug|x64
+		{702CEC70-EE3E-43A0-8D93-48B58FA50D3C}.Debug|x64.Build.0 = Debug|x64
+		{702CEC70-EE3E-43A0-8D93-48B58FA50D3C}.Release|Win32.ActiveCfg = Release|Win32
+		{702CEC70-EE3E-43A0-8D93-48B58FA50D3C}.Release|Win32.Build.0 = Release|Win32
+		{702CEC70-EE3E-43A0-8D93-48B58FA50D3C}.Release|x64.ActiveCfg = Release|x64
+		{702CEC70-EE3E-43A0-8D93-48B58FA50D3C}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{702CEC70-EE3E-43A0-8D93-48B58FA50D3C} = {698F4D29-4EC0-4F19-9D47-5146655FD03A}
+	EndGlobalSection
+EndGlobal

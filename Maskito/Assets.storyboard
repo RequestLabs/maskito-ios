@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G12a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="zKo-Bo-ht4">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Auth Asset View Controller-->
+        <scene sceneID="cJ7-0k-yzb">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iAQ-ey-sPA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="zKo-Bo-ht4" customClass="AuthAssetViewController" customModule="Maskito" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KJK-De-IwY"/>
+                        <viewControllerLayoutGuide type="bottom" id="WdI-Le-2K4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uTg-tc-T50">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading More Magic " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qtG-zY-kES">
+                                <rect key="frame" x="20" y="40" width="560" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="4Wl-uy-loc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3oU-cp-M2u">
+                                <rect key="frame" x="0.0" y="540" width="600" height="60"/>
+                                <color key="backgroundColor" red="0.3294117647" green="0.73725490199999999" blue="0.56078431370000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="eZh-Ka-IAM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
+                                <state key="normal" title="Thank you for your patience!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="magicLogo" translatesAutoresizingMaskIntoConstraints="NO" id="Mdb-VT-azM">
+                                <rect key="frame" x="225" y="120" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="Kzx-yc-iIj"/>
+                                    <constraint firstAttribute="width" constant="150" id="SFK-v6-M10"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dtp-am-AYa">
+                                <rect key="frame" x="20" y="245" width="560" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="150" id="VNa-xl-yoZ"/>
+                                    <constraint firstAttribute="height" constant="50" id="xjr-QT-c2K"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="141"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="xjr-QT-c2K"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.13725490200000001" green="0.13725490200000001" blue="0.34509803919999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="qtG-zY-kES" firstAttribute="centerY" secondItem="uTg-tc-T50" secondAttribute="centerY" id="4sr-1q-rgm"/>
+                            <constraint firstItem="Mdb-VT-azM" firstAttribute="top" secondItem="qtG-zY-kES" secondAttribute="bottom" constant="30" id="6J4-lG-ds9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dtp-am-AYa" secondAttribute="trailing" id="ALB-dR-TUB"/>
+                            <constraint firstItem="Mdb-VT-azM" firstAttribute="centerX" secondItem="uTg-tc-T50" secondAttribute="centerX" id="GO7-cU-lz3"/>
+                            <constraint firstItem="dtp-am-AYa" firstAttribute="centerY" secondItem="uTg-tc-T50" secondAttribute="centerY" constant="20" id="Iew-qc-0kT"/>
+                            <constraint firstAttribute="trailing" secondItem="qtG-zY-kES" secondAttribute="trailing" constant="20" id="IjV-gS-Qtj"/>
+                            <constraint firstItem="qtG-zY-kES" firstAttribute="top" secondItem="KJK-De-IwY" secondAttribute="bottom" constant="20" id="MaK-ea-N04"/>
+                            <constraint firstItem="qtG-zY-kES" firstAttribute="leading" secondItem="uTg-tc-T50" secondAttribute="leading" constant="20" id="MnI-6g-5Yd"/>
+                            <constraint firstItem="dtp-am-AYa" firstAttribute="leading" secondItem="uTg-tc-T50" secondAttribute="leadingMargin" id="V9h-MZ-9C3"/>
+                            <constraint firstAttribute="trailing" secondItem="3oU-cp-M2u" secondAttribute="trailing" id="Y02-oA-4OU"/>
+                            <constraint firstItem="3oU-cp-M2u" firstAttribute="leading" secondItem="uTg-tc-T50" secondAttribute="leading" id="u8g-9b-CAg"/>
+                            <constraint firstItem="dtp-am-AYa" firstAttribute="centerX" secondItem="uTg-tc-T50" secondAttribute="centerX" id="uoJ-Bc-aWh"/>
+                            <constraint firstItem="qtG-zY-kES" firstAttribute="centerX" secondItem="uTg-tc-T50" secondAttribute="centerX" id="xmn-O4-AKj"/>
+                            <constraint firstItem="WdI-Le-2K4" firstAttribute="top" secondItem="3oU-cp-M2u" secondAttribute="bottom" id="yps-m2-UwR"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="4sr-1q-rgm"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="goBtn" destination="3oU-cp-M2u" id="GOR-FT-zig"/>
+                        <outlet property="progressLabel" destination="dtp-am-AYa" id="jYv-mh-z4n"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="2658" y="-809"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="magicLogo" width="348" height="350"/>
+    </resources>
+</document>

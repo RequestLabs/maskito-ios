@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BlownGlass.v12", "BlownGlass.v12.vcxproj", "{4810E9AE-A188-435F-9170-56872ED187A4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Required", "Required", "{91260834-BFE7-49F9-A5EF-602926B3727C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GTEngine.v12", "..\..\..\GTEngine.v12.vcxproj", "{702CEC70-EE3E-43A0-8D93-48B58FA50D3C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4810E9AE-A188-435F-9170-56872ED187A4}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4810E9AE-A188-435F-9170-56872ED187A4}.Debug|Win32.Build.0 = Debug|Win32
+		{4810E9AE-A188-435F-9170-56872ED187A4}.Debug|x64.ActiveCfg = Debug|x64
+		{4810E9AE-A188-435F-9170-56872ED187A4}.Debug|x64.Build.0 = Debug|x64
+		{4810E9AE-A188-435F-9170-56872ED187A4}.Release|Win32.ActiveCfg = Release|Win32
+		{4810E9AE-A188-435F-9170-56872ED187A4}.Release|Win32.Build.0 = Release|Win32
+		{4810E9AE-A188-435F-9170-56872ED187A4}.Release|x64.ActiveCfg = Release|x64
+		{4810E9AE-A188-435F-9170-56872ED187A4}.Release|x64.Build.0 = Release|x64
+		{702CEC70-EE3E-43A0-8D93-48B58FA50D3C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{702CEC70-EE3E-43A0-8D93-48B58FA50D3C}.Debug|Win32.Build.0 = Debug|Win32
+		{702CEC70-EE3E-43A0-8D93-48B58FA50D3C}.Debug|x64.ActiveCfg = Debug|x64
+		{702CEC70-EE3E-43A0-8D93-48B58FA50D3C}.Debug|x64.Build.0 = Debug|x64
+		{702CEC70-EE3E-43A0-8D93-48B58FA50D3C}.Release|Win32.ActiveCfg = Release|Win32
+		{702CEC70-EE3E-43A0-8D93-48B58FA50D3C}.Release|Win32.Build.0 = Release|Win32
+		{702CEC70-EE3E-43A0-8D93-48B58FA50D3C}.Release|x64.ActiveCfg = Release|x64
+		{702CEC70-EE3E-43A0-8D93-48B58FA50D3C}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{702CEC70-EE3E-43A0-8D93-48B58FA50D3C} = {91260834-BFE7-49F9-A5EF-602926B3727C}
+	EndGlobalSection
+EndGlobal

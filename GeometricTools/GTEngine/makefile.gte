@@ -1,0 +1,151 @@
+CFG ?= Debug
+
+CC := /usr/bin/g++
+CFLAGS += -c -D__LINUX__ -std=c++11 -fPIC
+INCLUDE := -I Include
+LIBDIR := lib/$(CFG)
+
+ifeq (Debug,$(findstring Debug,$(CFG)))
+CFLAGS += -g -D_DEBUG
+else
+CFLAGS += -O2 -DNDEBUG
+endif
+
+ifeq (Dynamic,$(findstring Dynamic,$(CFG)))
+SOVER = 2
+RELVER = $(SOVER).0
+AR := $(CC)
+ARFLAGS := $(LDFLAGS) -shared -fPIC -Wl,-soname,libgtengine.so.$(SOVER) -o
+LIB := $(LIBDIR)/libgtengine.so.$(RELVER)
+else
+AR := /usr/bin/ar
+ARFLAGS := rs
+LIB := $(LIBDIR)/libgtengine.a
+endif
+
+OBJDIR := obj/$(CFG)
+OBJ :=\
+$(OBJDIR)/GTEnginePCH.o \
+$(OBJDIR)/GteHistogram.o \
+$(OBJDIR)/GTEnginePCH.o \
+$(OBJDIR)/GteImage.o \
+$(OBJDIR)/GteImageUtility2.o \
+$(OBJDIR)/GteImageUtility3.o \
+$(OBJDIR)/GteMarchingCubes.o \
+$(OBJDIR)/GteMarchingCubesTable.o \
+$(OBJDIR)/GteComputeModel.o \
+$(OBJDIR)/GteLogger.o \
+$(OBJDIR)/GteLogToFile.o \
+$(OBJDIR)/GteLogToStdout.o \
+$(OBJDIR)/GteLogToStringArray.o \
+$(OBJDIR)/GteWrapper.o \
+$(OBJDIR)/GteBitHacks.o \
+$(OBJDIR)/GteBSPrecision.o \
+$(OBJDIR)/GteEdgeKey.o \
+$(OBJDIR)/GteETManifoldMesh.o \
+$(OBJDIR)/GteGenerateMeshUV.o \
+$(OBJDIR)/GteIEEEBinary16.o \
+$(OBJDIR)/GteTetrahedronKey.o \
+$(OBJDIR)/GteTriangleKey.o \
+$(OBJDIR)/GteTSManifoldMesh.o \
+$(OBJDIR)/GteUIntegerAP32.o \
+$(OBJDIR)/GteVEManifoldMesh.o
+
+build : createdir compile setlinks
+
+createdir :
+	@mkdir -p $(LIBDIR)
+	@mkdir -p $(OBJDIR)
+
+compile : $(OBJ)
+	$(AR) $(ARFLAGS) $(LIB) $(OBJDIR)/*.o
+
+setlinks :
+	# The shared libraries are created with extension .so.2.0, so
+	# we need soft links for the applications to find them at run time.
+	cd $(LIBDIR) && \
+	(FILES=`find . -name "*.so.$(RELVER)"`;\
+	ls $$FILES;\
+	for file in $$FILES; do\
+		ln -sfv $$file `basename $$file .so.$(RELVER)`.so.$(SOVER);\
+		ln -sfv $$file `basename $$file .so.$(RELVER)`.so;\
+		done)
+	cd ../..
+
+clean :
+	rm -rf $(LIBDIR)
+	rm -rf $(OBJDIR)
+
+$(OBJDIR)/GTEnginePCH.o : Source/GTEnginePCH.cpp
+	$(CC) $(INCLUDE) $(CFLAGS) $< -o $@
+
+$(OBJDIR)/GteHistogram.o : Source/Imagics/GteHistogram.cpp
+	$(CC) $(INCLUDE) $(CFLAGS) $< -o $@
+
+$(OBJDIR)/GteImage.o : Source/Imagics/GteImage.cpp
+	$(CC) $(INCLUDE) $(CFLAGS) $< -o $@
+
+$(OBJDIR)/GteImageUtility2.o : Source/Imagics/GteImageUtility2.cpp
+	$(CC) $(INCLUDE) $(CFLAGS) $< -o $@
+
+$(OBJDIR)/GteImageUtility3.o : Source/Imagics/GteImageUtility3.cpp
+	$(CC) $(INCLUDE) $(CFLAGS) $< -o $@
+
+$(OBJDIR)/GteMarchingCubes.o : Source/Imagics/GteMarchingCubes.cpp
+	$(CC) $(INCLUDE) $(CFLAGS) $< -o $@
+
+$(OBJDIR)/GteMarchingCubesTable.o : Source/Imagics/GteMarchingCubesTable.cpp
+	$(CC) $(INCLUDE) $(CFLAGS) $< -o $@
+
+
+$(OBJDIR)/GteComputeModel.o : Source/LowLevel/GteComputeModel.cpp
+	$(CC) $(INCLUDE) $(CFLAGS) $< -o $@
+
+$(OBJDIR)/GteLogger.o : Source/LowLevel/GteLogger.cpp
+	$(CC) $(INCLUDE) $(CFLAGS) $< -o $@
+
+$(OBJDIR)/GteLogToFile.o : Source/LowLevel/GteLogToFile.cpp
+	$(CC) $(INCLUDE) $(CFLAGS) $< -o $@
+
+$(OBJDIR)/GteLogToStdout.o : Source/LowLevel/GteLogToStdout.cpp
+	$(CC) $(INCLUDE) $(CFLAGS) $< -o $@
+
+$(OBJDIR)/GteLogToStringArray.o : Source/LowLevel/GteLogToStringArray.cpp
+	$(CC) $(INCLUDE) $(CFLAGS) $< -o $@
+
+$(OBJDIR)/GteWrapper.o : Source/LowLevel/GteWrapper.cpp
+	$(CC) $(INCLUDE) $(CFLAGS) $< -o $@
+
+
+$(OBJDIR)/GteBitHacks.o : Source/Mathematics/GteBitHacks.cpp
+	$(CC) $(INCLUDE) $(CFLAGS) $< -o $@
+
+$(OBJDIR)/GteBSPrecision.o : Source/Mathematics/GteBSPrecision.cpp
+	$(CC) $(INCLUDE) $(CFLAGS) $< -o $@
+
+$(OBJDIR)/GteEdgeKey.o : Source/Mathematics/GteEdgeKey.cpp
+	$(CC) $(INCLUDE) $(CFLAGS) $< -o $@
+
+$(OBJDIR)/GteETManifoldMesh.o : Source/Mathematics/GteETManifoldMesh.cpp
+	$(CC) $(INCLUDE) $(CFLAGS) $< -o $@
+
+$(OBJDIR)/GteGenerateMeshUV.o : Source/Mathematics/GteGenerateMeshUV.cpp
+	$(CC) $(INCLUDE) $(CFLAGS) $< -o $@
+
+$(OBJDIR)/GteIEEEBinary16.o : Source/Mathematics/GteIEEEBinary16.cpp
+	$(CC) $(INCLUDE) $(CFLAGS) $< -o $@
+
+$(OBJDIR)/GteTetrahedronKey.o : Source/Mathematics/GteTetrahedronKey.cpp
+	$(CC) $(INCLUDE) $(CFLAGS) $< -o $@
+
+$(OBJDIR)/GteTriangleKey.o : Source/Mathematics/GteTriangleKey.cpp
+	$(CC) $(INCLUDE) $(CFLAGS) $< -o $@
+
+$(OBJDIR)/GteTSManifoldMesh.o : Source/Mathematics/GteTSManifoldMesh.cpp
+	$(CC) $(INCLUDE) $(CFLAGS) $< -o $@
+
+$(OBJDIR)/GteUIntegerAP32.o : Source/Mathematics/GteUIntegerAP32.cpp
+	$(CC) $(INCLUDE) $(CFLAGS) $< -o $@
+
+$(OBJDIR)/GteVEManifoldMesh.o : Source/Mathematics/GteVEManifoldMesh.cpp
+	$(CC) $(INCLUDE) $(CFLAGS) $< -o $@

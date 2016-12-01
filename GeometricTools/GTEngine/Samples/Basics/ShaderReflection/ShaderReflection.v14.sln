@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ShaderReflection.v14", "ShaderReflection.v14.vcxproj", "{216D2E5E-9827-4382-B7B7-C0532EBC82AF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Required", "Required", "{EF4451DF-9F8E-4D79-BCB4-C11B8612CA5D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GTEngine.v14", "..\..\..\GTEngine.v14.vcxproj", "{43A54DE9-1F9B-4BC6-A7BC-C3FD13B2C829}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{216D2E5E-9827-4382-B7B7-C0532EBC82AF}.Debug|Win32.ActiveCfg = Debug|Win32
+		{216D2E5E-9827-4382-B7B7-C0532EBC82AF}.Debug|Win32.Build.0 = Debug|Win32
+		{216D2E5E-9827-4382-B7B7-C0532EBC82AF}.Debug|x64.ActiveCfg = Debug|x64
+		{216D2E5E-9827-4382-B7B7-C0532EBC82AF}.Debug|x64.Build.0 = Debug|x64
+		{216D2E5E-9827-4382-B7B7-C0532EBC82AF}.Release|Win32.ActiveCfg = Release|Win32
+		{216D2E5E-9827-4382-B7B7-C0532EBC82AF}.Release|Win32.Build.0 = Release|Win32
+		{216D2E5E-9827-4382-B7B7-C0532EBC82AF}.Release|x64.ActiveCfg = Release|x64
+		{216D2E5E-9827-4382-B7B7-C0532EBC82AF}.Release|x64.Build.0 = Release|x64
+		{43A54DE9-1F9B-4BC6-A7BC-C3FD13B2C829}.Debug|Win32.ActiveCfg = Debug|Win32
+		{43A54DE9-1F9B-4BC6-A7BC-C3FD13B2C829}.Debug|Win32.Build.0 = Debug|Win32
+		{43A54DE9-1F9B-4BC6-A7BC-C3FD13B2C829}.Debug|x64.ActiveCfg = Debug|x64
+		{43A54DE9-1F9B-4BC6-A7BC-C3FD13B2C829}.Debug|x64.Build.0 = Debug|x64
+		{43A54DE9-1F9B-4BC6-A7BC-C3FD13B2C829}.Release|Win32.ActiveCfg = Release|Win32
+		{43A54DE9-1F9B-4BC6-A7BC-C3FD13B2C829}.Release|Win32.Build.0 = Release|Win32
+		{43A54DE9-1F9B-4BC6-A7BC-C3FD13B2C829}.Release|x64.ActiveCfg = Release|x64
+		{43A54DE9-1F9B-4BC6-A7BC-C3FD13B2C829}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{43A54DE9-1F9B-4BC6-A7BC-C3FD13B2C829} = {EF4451DF-9F8E-4D79-BCB4-C11B8612CA5D}
+	EndGlobalSection
+EndGlobal
+

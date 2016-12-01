@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GenerateOpenGLWrapper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Initialize.txt" />
+    <Text Include="Version.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="glcorearb.h" />
+    <ClInclude Include="GteOpenGL.h" />
+    <ClInclude Include="glext.h" />
+    <ClInclude Include="glxext.h" />
+    <ClInclude Include="wglext.h" />
+  </ItemGroup>
+</Project>

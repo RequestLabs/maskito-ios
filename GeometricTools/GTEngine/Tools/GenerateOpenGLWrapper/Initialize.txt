@@ -1,0 +1,101 @@
+void InitializeOpenGL(char const* infofile)
+{
+#if !defined(WIN32)
+    Initialize_OPENGL_VERSION_1_0();
+    Initialize_OPENGL_VERSION_1_1();
+#endif
+
+    Initialize_OPENGL_VERSION_1_2();
+    Initialize_OPENGL_VERSION_1_3();
+    Initialize_OPENGL_VERSION_1_4();
+    Initialize_OPENGL_VERSION_1_5();
+    Initialize_OPENGL_VERSION_2_0();
+    Initialize_OPENGL_VERSION_2_1();
+    Initialize_OPENGL_VERSION_3_0();
+    Initialize_OPENGL_VERSION_3_1();
+    Initialize_OPENGL_VERSION_3_2();
+    Initialize_OPENGL_VERSION_3_3();
+    Initialize_OPENGL_VERSION_4_0();
+    Initialize_OPENGL_VERSION_4_1();
+    Initialize_OPENGL_VERSION_4_2();
+    Initialize_OPENGL_VERSION_4_3();
+    Initialize_OPENGL_VERSION_4_4();
+    Initialize_OPENGL_VERSION_4_5();
+
+    if (infofile)
+    {
+        std::ofstream output(infofile);
+        if (output)
+        {
+            char const* vendor = (char const*)glGetString(GL_VENDOR);
+            if (vendor)
+            {
+                output << "vendor = " << vendor;
+            }
+            else
+            {
+                output << "vendor = <null>";
+            }
+            output << std::endl;
+
+            char const* renderer = (char const*)glGetString(GL_RENDERER);
+            if (vendor)
+            {
+                output << "renderer = " << renderer;
+            }
+            else
+            {
+                output << "renderer = <null>";
+            }
+            output << std::endl;
+
+            char const* version = (char const*)glGetString(GL_VERSION);
+            if (version)
+            {
+                output << "version = " << version;
+            }
+            else
+            {
+                output << "version = <null>";
+            }
+            output << std::endl;
+
+            if (GetOpenGLVersion() >= OPENGL_VERSION_3_0)
+            {
+                GLint numExtensions;
+                glGetIntegerv(GL_NUM_EXTENSIONS, &numExtensions);
+                for (int i = 0; i < numExtensions; ++i)
+                {
+                    output << glGetStringi(GL_EXTENSIONS, i) << std::endl;
+                }
+            }
+            else
+            {
+                char const* extensions =
+                    (char const*)glGetString(GL_EXTENSIONS);
+                if (extensions)
+                {
+                    output << "extensions =" << std::endl;
+                    size_t numBytes = strlen(extensions) + 1;
+                    char* extension = new char[numBytes];
+                    strcpy_s(extension, numBytes, extensions);
+                    char* nextToken = nullptr;
+                    char* token = strtok_s(extension, " \t\n", &nextToken);
+                    while (token)
+                    {
+                        output << "    " << token << std::endl;
+                        token = strtok_s(nullptr, " \t\n", &nextToken);
+                    }
+                    delete[] extension;
+                }
+                else
+                {
+                    output << "extensions = <null>" << std::endl;
+                }
+            }
+
+            output.close();
+        }
+    }
+}
+//----------------------------------------------------------------------------
